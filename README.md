@@ -116,6 +116,5 @@ Here’s an overview of what the application looks like:
 ![Screenshot 2024-12-27 142909](https://github.com/user-attachments/assets/86ab29d8-870f-4260-a47b-085140c55f81)
 ![Screenshot 2024-12-27 142900](https://github.com/user-attachments/assets/8c19924d-3fba-43d3-b01d-dc696cd415e0)
 ![Screenshot 2024-12-27 142849](https://github.com/user-attachments/assets/b841092c-1ffc-4d57-8f17-f0c66efa34a4)
-![Screenshot 2024-12-27 142832](https://github.com/user-attachments/assets/fe7f64c0-555e-4841-bf57-86f532880247)
 
 
