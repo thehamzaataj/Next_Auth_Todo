@@ -54,23 +54,11 @@ Install the necessary dependencies by running:
 npm install
 ```
 
-### 3. Configure Environment Variables
-
-Create a `.env.local` file in the root of your project and add the following environment variables:
-
-```env
-DATABASE_URL="postgresql://username:password@localhost:5432/todo_db?schema=public"
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=your_random_secret
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-```
-
 - Replace `username`, `password`, and `todo_db` with your PostgreSQL credentials.
 - Generate a random string for `NEXTAUTH_SECRET`.
 - Obtain your Google OAuth credentials from the [Google Developer Console](https://console.developers.google.com/).
 
-### 4. Set Up Prisma
+### 5. Set Up Prisma
 
 Run Prisma migrations to set up the database schema:
 
@@ -79,7 +67,7 @@ npx prisma migrate dev --name init
 npx prisma generate
 ```
 
-### 5. Run the Development Server
+### 6. Run the Development Server
 
 Start the development server by running:
 
