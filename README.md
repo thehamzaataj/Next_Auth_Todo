@@ -1,4 +1,4 @@
-Certainly! Below is a simplified **README.md** file with a basic introduction to the product, installation instructions, and an image section.
+Here’s a revised and professional version of your **README.md** file with improved formatting and structure, making it cleaner and more presentable. I've also fixed the image link and enhanced readability.
 
 ---
 
@@ -11,10 +11,10 @@ This is a **Full-Stack Todo Application** built using **Next.js**, **Prisma ORM*
 ## Features
 
 - **User Authentication**: Sign up and log in with Google or using email/password credentials.
-- **Todo Management**: Add, update, and delete tasks.
+- **Todo Management**: Add, update, and delete tasks with ease.
 - **Protected Routes**: Only authenticated users can access the dashboard and edit pages.
 - **Real-Time Updates**: No page refresh required when adding, editing, or deleting tasks.
-- **Responsive Design**: Fully responsive design for mobile, tablet, and desktop devices.
+- **Responsive Design**: Fully responsive design optimized for mobile, tablet, and desktop devices.
 
 ---
 
@@ -32,7 +32,7 @@ This is a **Full-Stack Todo Application** built using **Next.js**, **Prisma ORM*
 ## Requirements
 
 - **Node.js** (LTS version recommended)
-- **npm**
+- **npm** or **yarn**
 - **PostgreSQL Database** (either local or hosted, such as [Heroku Postgres](https://www.heroku.com/postgres))
 
 ---
@@ -41,6 +41,8 @@ This is a **Full-Stack Todo Application** built using **Next.js**, **Prisma ORM*
 
 ### 1. Clone the Repository
 
+Clone the project repository and navigate into the project directory:
+
 ```bash
 git clone https://github.com/yourusername/todo-app.git
 cd todo-app
@@ -48,17 +50,29 @@ cd todo-app
 
 ### 2. Install Dependencies
 
-Install the necessary dependencies by running:
+Install the necessary dependencies:
 
 ```bash
 npm install
 ```
 
-- Replace `username`, `password`, and `todo_db` with your PostgreSQL credentials.
-- Generate a random string for `NEXTAUTH_SECRET`.
-- Obtain your Google OAuth credentials from the [Google Developer Console](https://console.developers.google.com/).
+### 3. Configure Environment Variables
 
-### 5. Set Up Prisma
+Create a `.env` file in the root of your project and configure the following environment variables:
+
+```bash
+DATABASE_URL="postgresql://postgres:1234@localhost:5432/auth?schema=public"
+GOOGLE_CLIENT_ID="your-google-client-id"
+GOOGLE_CLIENT_SECRET="your-google-client-secret"
+NEXT_PUBLIC_BASE_URL="http://localhost:3000"
+SECRET="your-random-secret"
+```
+
+- Replace the `DATABASE_URL` with your PostgreSQL connection string.
+- Obtain your **Google OAuth credentials** from the [Google Developer Console](https://console.developers.google.com/).
+- Generate a random string for `SECRET` (can be used for session management).
+
+### 4. Set Up Prisma
 
 Run Prisma migrations to set up the database schema:
 
@@ -67,18 +81,38 @@ npx prisma migrate dev --name init
 npx prisma generate
 ```
 
-### 6. Run the Development Server
+### 5. Run the Development Server
 
-Start the development server by running:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-The app will be available at `http://localhost:3000`.
+The app will be available at [http://localhost:3000](http://localhost:3000).
+
+---
+
+## Environment Variables for Your Project
+
+To run the project locally or set up the environment, use the following environment variables in your `.env` file:
+
+```bash
+DATABASE_URL="postgresql://postgres:1234@localhost:5432/auth?schema=public"
+GOOGLE_CLIENT_ID="your-google-client-id"
+GOOGLE_CLIENT_SECRET="your-google-client-secret"
+NEXT_PUBLIC_BASE_URL="http://localhost:3000"
+SECRET="your-random-secret"
+```
+
+> **Note**: Never expose sensitive keys (like `GOOGLE_CLIENT_SECRET` or `SECRET`) publicly. Use `.gitignore` to exclude your `.env` file from version control.
 
 ---
 
 ## Application Screenshots
 
 Here’s an overview of what the application looks like:
+
+![Todo App Screenshot](https://via.placeholder.com/800x600.png?text=Your+Screenshot+Here)
+
+
