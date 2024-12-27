@@ -1,7 +1,3 @@
-Here’s a revised and professional version of your **README.md** file with improved formatting and structure, making it cleaner and more presentable. I've also fixed the image link and enhanced readability.
-
----
-
 # Full-Stack Todo Application with Authentication
 
 This is a **Full-Stack Todo Application** built using **Next.js**, **Prisma ORM**, **PostgreSQL**, and **NextAuth** for authentication. The app allows users to sign up or log in using Google OAuth or their credentials, and manage their Todo tasks with functionalities like creating, updating, and deleting tasks.
