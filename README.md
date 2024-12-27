@@ -63,8 +63,13 @@ Before getting started, make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
+https://github.com/thehamzaataj/Next_Auth_Todo
 git clone https://github.com/yourusername/todo-app.git
 cd todo-app
+npm install
+```
+```
+npm run dev
 ```
 
 ### 2. Install Dependencies
