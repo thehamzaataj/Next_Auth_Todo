@@ -9,8 +9,8 @@
  */
 (() => {
 var exports = {};
-exports.id = "pages/api/auth/[...nextauth]";
-exports.ids = ["pages/api/auth/[...nextauth]"];
+exports.id = "next-auth-todo-two.vercel.app/api/auth/[...nextauth]";
+exports.ids = ["next-auth-todo-two.vercel.app/api/auth/[...nextauth]"];
 exports.modules = {
 
 /***/ "@prisma/client":
@@ -93,7 +93,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "(api)/./src/pages/api/auth/[...nextauth].js":
+/***/ "(api)/./src/next-auth-todo-two.vercel.app/api/auth/[...nextauth].js":
 /*!*********************************************!*\
   !*** ./src/pages/api/auth/[...nextauth].js ***!
   \*********************************************/
@@ -120,7 +120,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../../../webpack-api-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("(api)/./src/pages/api/auth/[...nextauth].js"));
+var __webpack_exports__ = (__webpack_exec__("(api)/./src/next-auth-todo-two.vercel.app/api/auth/[...nextauth].js"));
 module.exports = __webpack_exports__;
 
 })();
